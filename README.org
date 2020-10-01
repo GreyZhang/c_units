@@ -6,3 +6,5 @@
 - code: 01_hexchars2num
 ** swap byte(s) which can be used to swap values and convert endians.
 - code: 02_bytes_swap
+** CRC calculation
+- code: 03_crc
