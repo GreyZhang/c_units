@@ -8,3 +8,5 @@
 - code: 02_bytes_swap
 ** CRC calculation
 - code: 03_crc
+** print ascii table use C.
+- code: 04_ascii
