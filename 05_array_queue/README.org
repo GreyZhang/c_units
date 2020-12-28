@@ -1,0 +1,4 @@
+* queue using array
+- use array as queue
+- Support 255 elements and OVERWRITE_QUEUE mode. When the overwrite mode is enabled, if you continue to add elements after the queue is full, the last element will be overwritten.
+

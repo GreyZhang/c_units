@@ -10,3 +10,5 @@
 - code: 03_crc
 ** print ascii table use C.
 - code: 04_ascii
+** queue using array
+- code: 05_array_queue
