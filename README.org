@@ -14,3 +14,5 @@
 - code: 05_array_queue
 ** Test if an ASCII char is a number.
 - code: 06_is_digit
+** Find a number in a string.
+- code: 07_skip_atoi
