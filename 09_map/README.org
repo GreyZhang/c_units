@@ -1,0 +1,2 @@
+* map
+- This function is copied from Arduino library. It can map a number in a range into a value of a new range.
