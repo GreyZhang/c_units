@@ -1,0 +1,2 @@
+* hamming weight
+- This function is copied from wiki which can be used to calculate hamming weight.

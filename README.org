@@ -18,5 +18,8 @@
 - code: 07_skip_atoi
 ** Calculate a variable size and round it to int units.
 - code: 08___va_rounded_szie
-**  Map a number in a range to a new number in another range.
+** Map a number in a range to a new number in another range.
 - code: 09_map
+** hamming weight calculation
+- code: 10_hamming_weight
+
