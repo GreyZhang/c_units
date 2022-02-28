@@ -22,4 +22,6 @@
 - code: 09_map
 ** hamming weight calculation
 - code: 10_hamming_weight
-
+** hysteresis control, also called bang-bang control
+- code: 11_hysteresis_process
+- A test note: [[https://greyzhang.blog.csdn.net/article/details/123194208][hysteresis_control]]
