@@ -25,3 +25,6 @@
 ** hysteresis control, also called bang-bang control
 - code: 11_hysteresis_process
 - A test note: [[https://greyzhang.blog.csdn.net/article/details/123194208][hysteresis_control]]
+** printf
+- a tiny and fast printf which is suitable for embedded system.
+- related link: [[https://github.com/mpaland/printf][printf]]
