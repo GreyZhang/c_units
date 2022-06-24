@@ -28,3 +28,5 @@
 ** printf
 - a tiny and fast printf which is suitable for embedded system.
 - related link: [[https://github.com/mpaland/printf][printf]]
+** average calculation
+- a test note: [[https://blog.csdn.net/grey_csdn/article/details/125452059][1280_C语言求两个无符号整形的平均值]]
