@@ -31,3 +31,6 @@
 - [[https://blog.csdn.net/grey_csdn/article/details/125899342][1306_两个开源printf的资源使用对比测试]]
 ** average calculation
 - a test note: [[https://blog.csdn.net/grey_csdn/article/details/125452059][1280_C语言求两个无符号整形的平均值]]
+** set bits
+- a fuction which can support a u32 variable bits set and clear. It can be very easily modified for other data types.
+- code: 13_set_bits
