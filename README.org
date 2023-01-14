@@ -34,3 +34,6 @@
 ** set bits
 - a fuction which can support a u32 variable bits set and clear. It can be very easily modified for other data types.
 - code: 13_set_bits
+** MD5 calculation
+- MD5 Message-Digest Algorithm (RFC 1321)
+- code: 14_md5
