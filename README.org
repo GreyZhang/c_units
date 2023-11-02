@@ -40,3 +40,5 @@
 ** couting bits
 - hacker_popcnt
 - code: 15_hacker_popcnt
+** free and malloc for embedded system.
+- code: 16_memmang
