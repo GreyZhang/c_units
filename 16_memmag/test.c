@@ -30,7 +30,7 @@ int main(void)
     printf("sizeof int is :%ld\n", sizeof(int));
     int free_size_before = xPortGetFreeHeapSize();
     printf("free memory size before malloc a int size: %d\n", free_size_before);
-    int *a = pvPortMalloc(sizeof(int));
+    int *a = malloc(sizeof(int));
     int free_size_after = xPortGetFreeHeapSize();
     printf("free memory size after malloc a int size = %d\n", free_size_after);
     printf("ram cost for a int malloc: %d\n", free_size_before - free_size_after);
@@ -41,7 +41,7 @@ int main(void)
     printf("sizeof 2 int is :%ld\n", 2 * sizeof(int));
     free_size_before = xPortGetFreeHeapSize();
     printf("free memory size before malloc 2 int size: %d\n", free_size_before);
-    int *b = pvPortMalloc(2 * sizeof(int));
+    int *b = malloc(2 * sizeof(int));
     free_size_after = xPortGetFreeHeapSize();
     printf("free memory size after malloc 2 int size = %d\n", free_size_after);
     printf("ram cost for 2 int malloc: %d\n", free_size_before - free_size_after);
@@ -51,16 +51,16 @@ int main(void)
     printf("sizeof 8 int is :%ld\n", 8 * sizeof(int));
     free_size_before = xPortGetFreeHeapSize();
     printf("free memory size before malloc 8 int size: %d\n", free_size_before);
-    int *c = pvPortMalloc(8 * sizeof(int));
+    int *c = malloc(8 * sizeof(int));
     free_size_after = xPortGetFreeHeapSize();
     printf("free memory size after malloc 8 int size = %d\n", free_size_after);
     printf("ram cost for 8 int malloc: %d\n", free_size_before - free_size_after);
     report_heap_status();
-    vPortFree(a);
+    free(a);
     report_heap_status();
-    vPortFree(b);
+    free(b);
     report_heap_status();
-    vPortFree(c);
+    free(c);
     report_heap_status();
     printf("heap size after free all blocks: %d\n", xPortGetFreeHeapSize());
 

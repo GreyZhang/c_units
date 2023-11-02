@@ -53,7 +53,10 @@ typedef struct xHeapStats
 size_t xPortGetFreeHeapSize(void);
 void vPortGetHeapStats(HeapStats_t * pxHeapStats);
 size_t xPortGetMinimumEverFreeHeapSize( void );
+
+#define free vPortFree
 void vPortFree( void * pv );
+#define malloc pvPortMalloc
 void * pvPortMalloc( size_t xWantedSize );
 
 #endif
