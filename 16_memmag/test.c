@@ -20,7 +20,7 @@ void report_heap_status(void)
 int main(void)
 {
     /* printf("start initialisation...\n"); */
-    /* memmang_init(); */
+    heap_init();
     /* int free_size_init = xPortGetFreeHeapSize(); */
     /* printf("xPortGetFreeHeapSize() = %d\n", free_size_init); */
     /* printf("prvHeapInit ram cost: %d\n", configTOTAL_HEAP_SIZE - free_size_init); */

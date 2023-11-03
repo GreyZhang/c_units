@@ -465,7 +465,7 @@ void vPortGetHeapStats( HeapStats_t * pxHeapStats )
     /* taskEXIT_CRITICAL(); */
 }
 
-void head_init(void)
+void heap_init(void)
 {
     prvHeapInit();
 }

@@ -58,6 +58,6 @@ size_t xPortGetMinimumEverFreeHeapSize( void );
 void vPortFree( void * pv );
 #define malloc pvPortMalloc
 void * pvPortMalloc( size_t xWantedSize );
-void head_init(void);
+void heap_init(void);
 
 #endif
