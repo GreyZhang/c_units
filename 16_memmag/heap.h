@@ -3,6 +3,7 @@
 
 #include <stdint.h>
 #include <stdlib.h>
+#include <string.h>
 
 /* Definition assert() function. */
 #define configASSERT(x)                  if((x)==0) { for( ;; ); }
@@ -58,6 +59,8 @@ size_t xPortGetMinimumEverFreeHeapSize( void );
 void vPortFree( void * pv );
 #define malloc pvPortMalloc
 void * pvPortMalloc( size_t xWantedSize );
+#define realloc pvPortRealloc
+void *pvPortRealloc(void *pv, size_t xWantedSize);
 void heap_init(void);
 
 #endif

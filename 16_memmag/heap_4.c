@@ -417,7 +417,8 @@ static void prvInsertBlockIntoFreeList( BlockLink_t * pxBlockToInsert ) /* PRIVI
 void vPortGetHeapStats( HeapStats_t * pxHeapStats )
 {
     BlockLink_t * pxBlock;
-    size_t xBlocks = 0, xMaxSize = 0, xMinSize = portMAX_DELAY; /* portMAX_DELAY used as a portable way of getting the maximum value. */
+    /* portMAX_DELAY used as a portable way of getting the maximum value. */
+    size_t xBlocks = 0, xMaxSize = 0, xMinSize = portMAX_DELAY;
 
     /* vTaskSuspendAll(); */
     {
@@ -465,8 +466,32 @@ void vPortGetHeapStats( HeapStats_t * pxHeapStats )
     /* taskEXIT_CRITICAL(); */
 }
 
+void *pvPortRealloc(void *pv, size_t xWantedSize)
+{
+    void *p;
+
+    if (xWantedSize == 0)
+    {
+        vPortFree(pv);
+        return NULL;
+    }
+
+    p = pvPortMalloc(xWantedSize);
+
+    if (p)
+    {
+        /* zero the memory */
+        if (pv != NULL)
+        {
+            memcpy(p, pv, xWantedSize);
+            vPortFree(pv);
+        }
+    }
+
+    return p;
+}
+
 void heap_init(void)
 {
     prvHeapInit();
 }
-
